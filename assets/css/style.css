@@ -22,10 +22,10 @@ html {
 }
 
 .lb {
-        background-color: #B4886B;
-        font-weight: bold;
-        padding: 0px 4px;
-        border-radius: 2px;
+  background-color: #b4886b;
+  font-weight: bold;
+  padding: 0px 4px;
+  border-radius: 2px;
 }
 
 p,
@@ -34,27 +34,27 @@ p,
 }
 
 p {
-    padding-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 ul {
-    list-style-type: none;
-  }
+  list-style-type: none;
+}
 
 ul li {
-    margin: 8px;
-    padding: 12px;
-    font-size: 16px;
-    background-color: #5c4c4278;
+  margin: 8px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #5c4c4278;
 }
 
 ul li i {
-    margin: 0px 10px;
+  margin: 0px 10px;
 }
 /* CTA */
 
 .cta {
-    padding-top: 15px;
+  padding-top: 15px;
   align-items: center;
   background-clip: padding-box;
   background-color: #fa6400;
@@ -96,27 +96,34 @@ ul li i {
   transform: translateY(0);
 }
 
-
-@media (max-width: 600px)
-{
+@media (max-width: 600px) {
   html {
     overflow: auto;
   }
- .main {
-  display: block;
-  padding: 6px;
-  margin: 4px;
-  text-align: center;
- }
+  .main {
+    display: block;
+    padding: 6px;
+    margin: 4px;
+    text-align: center;
+  }
 
- .notice {
-  padding-bottom: 14px;
- }
+  .notice {
+    padding-bottom: 14px;
+  }
 
- p {
-  padding-bottom: 4px;
+  p {
+    padding-bottom: 4px;
+  }
+  ul {
+    padding: 0px;
+  }
 }
- ul {
-  padding: 0px;
- }
+
+/* MODAL */
+dialog[open] {
+  background-color: #1f0e03;
+  color: aqua;
+  #btn-close {
+    text-align: end;
+  }
 }

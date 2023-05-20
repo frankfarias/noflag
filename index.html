@@ -55,6 +55,7 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="./assets/js/main.js"></script>
     <title>NoFlag - Um mundo sem fronteiras</title>
   </head>
   <body>
@@ -70,8 +71,8 @@
             a humanidade precisa conviver em harmonia e não em bolhas.</strong
           >
         </p>
-        <a
-          href="#"
+        <a         
+          onclick="openModal()"
           class="cta animate__animated animate__lightSpeedInLeft animate__delay-2s"
           >ME AVISE</a
         >
@@ -97,5 +98,16 @@
         </ul>
       </section>
     </div>
+
+    <!-- MODAL -->
+    <dialog id="myModal">
+      <div id="btn-close"><button onclick="closeModal()"><i class="fa-solid fa-square-xmark"></i></button></div>
+      <h2>Quero ser avisado!</h2>
+      <p>Insira seu e-mail abaixo para que você possa ser avisado assim que o nosso blog for lançado!</p>
+      <form action="#">
+        <input class="cta" type="email" name="" id="email">
+        <button class="cta" type="submit">Cadastrar</button>
+      </form>
+    </dialog>
   </body>
 </html>
